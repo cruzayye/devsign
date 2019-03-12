@@ -5,8 +5,10 @@ import SearchBar from './SearchBar';
 describe('Comment component tests', () => {
   it('renders the Comment component correctly', () => {
     const tree = renderer.create(
-      <SearchBar type='text' />
+      <SearchBar type="text" />
     );
-    expect(tree).toMatchSnapshot;
+      
+
+    expect(tree).toMatchSnapshot();
   });
 });

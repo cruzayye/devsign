@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import Home from './Home';
+import Followers from './Followers';
 import {
   BrowserRouter as Router,
   Switch,
@@ -40,13 +41,6 @@ function Profile() {
 }
 
 function Following() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
-function Followers() {
   return (
     <div>
       <h2>About</h2>

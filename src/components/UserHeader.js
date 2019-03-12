@@ -5,9 +5,9 @@ export default function UserHeader({ img, description, logoImage }){
   return (
     <>
     <section>
-    <img src={img} />
-    <p>{description}</p>
-    <img src={logoImage} />
+      <img src={img} />
+      <p>{description}</p>
+      <img src={logoImage} />
     </section>
     </>
   );
@@ -21,3 +21,4 @@ UserHeader.propTypes = {
   logoImage: PropTypes.string.isRequired,
 
 }
+;

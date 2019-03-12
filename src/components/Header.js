@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Home from './Home';
 import {
@@ -12,10 +13,10 @@ function Header() {
   return (
     <Router>
       <div>
-      <Link to='/'> Home </ Link>
-      <Link to='/profile'> Profile </ Link>
-      <Link to='/following'> Following </ Link>
-      <Link to='/followers'> Followers </ Link>
+        <Link to='/'> Home </ Link>
+        <Link to='/profile'> Profile </ Link>
+        <Link to='/following'> Following </ Link>
+        <Link to='/followers'> Followers </ Link>
 
         <hr />
 

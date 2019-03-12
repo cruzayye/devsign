@@ -9,12 +9,12 @@ export default class Demo extends PureComponent {
 
 
 
- render() {
-   return (
+  render() {
+    return (
       <>
       <Header />
       </>
-   );
- }
+    );
+  }
 
 }

@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 export default function SearchBar({ seachBarName, searchInput, onChange }) {
   return ( 
-  <input type="text" name={seachBarName} value={searchInput} onChange={onChange} />
-  )
+    <input type="text" name={seachBarName} value={searchInput} onChange={onChange} />
+  );
 }
 
 SearchBar.propTypes = {
@@ -12,3 +12,4 @@ SearchBar.propTypes = {
   searchInput: PropTypes.string,
   onChange: PropTypes.func
 }
+;

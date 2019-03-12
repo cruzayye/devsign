@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'React';
+import React, { PureComponent } from 'react';
 import UserHeader from './UserHeader';
 import SearchBar from './SearchBar';
 import FollowersTweets from './FollowersTweets';

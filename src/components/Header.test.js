@@ -1,14 +1,14 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import SearchBar from './SearchBar';
+import Header from './Header';
+
 
 describe('Comment component tests', () => {
-  it('renders the Comment component correctly', () => {
+  it('renders the Header component correctly', () => {
     const tree = renderer.create(
-      <SearchBar type="text" />
-    );
-      
+      <Header /> 
 
+    );
     expect(tree).toMatchSnapshot();
   });
 });

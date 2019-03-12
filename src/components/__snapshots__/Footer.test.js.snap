@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comment component tests renders the Comment component correctly 1`] = `
+<footer
+  style={
+    Object {
+      "backgroundColor": "blue",
+      "textAlign": "center",
+    }
+  }
+>
+   
+  <p>
+    © something smart goes here
+  </p>
+</footer>
+`;

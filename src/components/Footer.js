@@ -1,12 +1,12 @@
 import React from 'react';
+import styles from './Footer.css';
 
-const styles = {
-  backgroundColor: 'blue',
-  textAlign: 'center'
-};
+
+
 export default function Footer() {
   return (
-    <footer style={styles}> <p>&copy; something smart goes here</p></footer>
+    <footer className={styles.bg} > <p>2018</p></footer>
   );
 
 }
+

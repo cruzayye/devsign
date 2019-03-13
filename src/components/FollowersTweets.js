@@ -1,20 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './FollwersTweets.css';
 
-export default function FollowersTweets({ user, tweet, likes, userLink }) {
+
+export default function FollowersTweets({ tweet }) {
+  const { user, text, likes, userLink, img } = tweet;
   return (
-    <>
-    <a href={userLink}><h4>{user}</h4></a>
-    <p>{tweet}</p>
-    <button>{likes}</button>
-    </>
+    <section>
+      <a href={userLink}>
+        <div>
+          <img src={img} />
+        </div>
+        <div>
+          <h4>{user}</h4>
+          <p>{text}</p>
+          <button>Likes:{likes}</button>
+        </div>
+      </a>
+    </section>
   );
 
 }
 
 FollowersTweets.propTypes = {
-  user: PropTypes.string.isRequired,
-  userLink: PropTypes.string.isRequired,
-  tweet: PropTypes.string.isRequired,
-  likes: PropTypes.string.isRequired,
+  tweet: PropTypes.object.isRequired,
 };

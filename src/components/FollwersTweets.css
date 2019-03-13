@@ -1,0 +1,22 @@
+img{
+  max-height: 100%;
+}
+
+
+a {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  grid-row: 1000px;
+  
+}
+
+h4, p {
+  margin: 0;
+}
+
+section {
+  background-color: blue;
+  border-bottom: 1px solid black;
+}
+
+

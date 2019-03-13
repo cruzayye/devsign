@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import Home from './Home';
+import FollowersPage from './FollowersPage';
+import PersonalTweetsPage from './PersonalTweets/PersonalTweetsPage';
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,36 +19,20 @@ function Header() {
         <div className={styles.links}>
           <Link to='/'> Home </ Link>
           <Link to='/profile'> Profile </ Link>
-          <Link to='/following'> Following </ Link>
+          <Link to='/followers'> Followers </ Link>
         </div>
 
         <hr />
 
         <Route exact path="/" component={Home} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/following" component={Following} />
+        <Route path="/profile" component={PersonalTweetsPage} />
+        <Route path="/followers" component={FollowersPage} />
       </div>
     </Router>
   );
 }
 
 
-
-function Profile() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
-
-function Following() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
 
 
 

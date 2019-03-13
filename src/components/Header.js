@@ -8,14 +8,17 @@ import {
   Link,
   Redirect
 } from 'react-router-dom';
+import styles from './Header.css';
 
 function Header() {
   return (
     <Router>
       <div>
-        <Link to='/'> Home </ Link>
-        <Link to='/profile'> Profile </ Link>
-        <Link to='/following'> Following </ Link>
+        <div className={styles.links}>
+          <Link to='/'> Home </ Link>
+          <Link to='/profile'> Profile </ Link>
+          <Link to='/following'> Following </ Link>
+        </div>
 
         <hr />
 

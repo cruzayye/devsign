@@ -2,6 +2,10 @@ img{
   max-height: 100%;
 }
 
+a{
+  text-decoration: none;
+}
+
 
 a {
   display: grid;
@@ -15,7 +19,9 @@ h4, p {
 }
 
 section {
-  background-color: blue;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
   border-bottom: 1px solid black;
 }
 

@@ -1,4 +1,2 @@
-
-    
-export const getTweets = state => state.recenttweets.tweets;
-export const isTweetsLoading = state => state.recenttweets.loading;
+export const getTweets = state => state.recentTweets.recentTweets;
+export const isTweetsLoading = state => state.recentTweets.loading;

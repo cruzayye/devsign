@@ -1,4 +1,4 @@
-import { FETCH_RECENT_TWEETS, FETCH_TWEETS_PENDING } from '../actions/tweets';
+import { FETCH_RECENT_TWEETS, FETCH_TWEETS_PENDING } from '../actions/followerTweets';
 
 const initialState = {
   recentTweets: [],
@@ -8,7 +8,7 @@ const initialState = {
 export default function reducer(state = initialState, action) {
   switch(action.type) {
     case FETCH_RECENT_TWEETS:
-      return { ...state, recenttweets: action.payload };
+      return { ...state, recentTweets: action.payload };
     case FETCH_TWEETS_PENDING:
       return { ...state, loading: true };
     default:

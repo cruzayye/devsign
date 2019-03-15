@@ -2,10 +2,10 @@ import React, { PureComponent } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
-import withSession from '../containers/WithSession';
 import FollowersPage from './FollowersPage';
 import PersonalTweetsPage from './PersonalTweets/PersonalTweetsPage';
 import Callback from '../containers/Callback';
+import { withSession } from '../containers/WithSession';
 import {
   BrowserRouter as Router,
   Route,

@@ -18,12 +18,14 @@ export default class App extends PureComponent {
   render() {
     return (
       <>
-      <Header />
       <Router>
-        <Route exact path="/" component={Home} />
-        <Route path="/profile" component={PersonalTweetsPage} />
-        <Route path="/followers" component={FollowersPage} />
-        <Route path="/callback" component={Callback} />
+        <div>
+          <Header />
+          <Route exact path="/" component={Home} />
+          <Route path="/profile" component={PersonalTweetsPage} />
+          <Route path="/followers" component={FollowersPage} />
+          <Route path="/callback" component={Callback} />
+        </div>
       </Router>
       <Footer />
       </>

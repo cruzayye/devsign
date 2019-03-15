@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { fetchTweets } from '../actions/followerTweets';
+import { withFetch } from  '../components/withFetch';
 import TweetList from '../components/TweetList';
 import { getTweets } from '../selectors/tweets';
 
@@ -16,4 +17,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(TweetList);
+)(withFetch(TweetList));

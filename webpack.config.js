@@ -1,5 +1,6 @@
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
+const DotenvPlugin = require('dotenv-webpack');
 
 // eslint-disable-next-line no-undef
 module.exports = {
@@ -9,10 +10,11 @@ module.exports = {
     publicPath: '/'
   },
   devServer: {
-    port: 7890, host: '127.0.0.1',
+    port: 7890,
     historyApiFallback: true
   },
   plugins: [
+    new DotenvPlugin(),
     new HtmlPlugin({ template: './src/index.html' }),
     new CleanPlugin('./dist')
   ],
@@ -25,7 +27,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: ['@babel/plugin-proposal-class-properties'],
+            plugins: ['@babel/plugin-proposal-class-properties', 'babel-plugin-styled-components'],
             cacheDirectory: true
           }
         }

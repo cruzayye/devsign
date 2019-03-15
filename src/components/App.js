@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
+import withSession from '../containers/WithSession';
 import FollowersPage from './FollowersPage';
 import PersonalTweetsPage from './PersonalTweets/PersonalTweetsPage';
 import Callback from '../containers/Callback';
@@ -21,7 +22,7 @@ export default class App extends PureComponent {
       <Router>
         <div>
           <Header />
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={withSession(Home)} />
           <Route path="/profile" component={PersonalTweetsPage} />
           <Route path="/followers" component={FollowersPage} />
           <Route path="/callback" component={Callback} />

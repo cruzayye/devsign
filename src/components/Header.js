@@ -4,12 +4,8 @@ import styles from './Header.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
-
-
 function Header() {
-
   return (
-    
     <div className={styles.links}>
       <Link to='/'> Home </ Link>
       <Link to='/profile'> Profile </ Link>

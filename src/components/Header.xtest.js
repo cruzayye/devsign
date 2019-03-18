@@ -12,3 +12,4 @@ describe('Comment component tests', () => {
     expect(tree).toMatchSnapshot();
   });
 });
+

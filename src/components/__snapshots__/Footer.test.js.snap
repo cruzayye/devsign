@@ -2,16 +2,11 @@
 
 exports[`Comment component tests renders the Comment component correctly 1`] = `
 <footer
-  style={
-    Object {
-      "backgroundColor": "blue",
-      "textAlign": "center",
-    }
-  }
+  className="bg"
 >
    
   <p>
-    © something smart goes here
+    2018
   </p>
 </footer>
 `;

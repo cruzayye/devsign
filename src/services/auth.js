@@ -28,6 +28,7 @@ export const handleAuth = () => {
     auth0.parseHash((err, result) => {
       if(result && result.accessToken && result.idToken) {
         auth0.client.userInfo(result.accessToken, (err, info) => {
+          console.log(info);
           if(err) return reject(err);
           return resolve({
             token: result.idToken,

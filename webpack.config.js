@@ -1,6 +1,7 @@
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 const DotenvPlugin = require('dotenv-webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // eslint-disable-next-line no-undef
 module.exports = {
@@ -15,7 +16,8 @@ module.exports = {
     historyApiFallback: true
   },
   plugins: [
-    new DotenvPlugin(),
+    new DotenvPlugin({ systemvars: true }),
+    new CopyWebpackPlugin([{ from: 'public' }]),
     new HtmlPlugin({ template: './src/index.html' }),
     new CleanPlugin('./dist')
   ],

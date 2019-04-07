@@ -19,7 +19,7 @@ export default class App extends PureComponent {
   render() {
     return (
       <>
-      <Router>
+      {/* <Router> */}
         <div>
           <Header />
           <Route exact path="/" component={withSession(Home)} />

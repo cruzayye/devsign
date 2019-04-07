@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import UserHeader from './UserHeader';
-import SearchBar from './SearchBar';
 import HomeTweets from '../containers/HomeTweets';
 
 
@@ -19,7 +18,6 @@ export default class Home extends PureComponent {
     return (
       <>
       <UserHeader img={img} logoImage={logoImage} description={description}/>
-      <SearchBar type={'text'} name={'searchBar'} value={'searchInput'} />
       <HomeTweets />
       </>
     );
